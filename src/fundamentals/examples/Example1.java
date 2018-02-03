@@ -9,4 +9,6 @@ class Example1 {
         int y = 10;
         System.out.println(next + y);
     }
+    
+    //Edit on github
 }
