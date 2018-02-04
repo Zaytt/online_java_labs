@@ -2,37 +2,63 @@ Answer the following questions:
 
 1.) Using the command line, how do you:
     a. change directories?
+        cd <directory>
     b. list the contents of a folder?
+        ls (options l for long form and a to show hidden files)
     c. print the path of the current directory?
+        pwd
     d. move a file from one location to the another?
+        mv <file> <destination>
     e. copy a file from one location to another?
+        cp <file> <destination>
     f. create a file?
+        touch <new_file_name>
     g. create a folder?
+        mkdir <name_of_folder>
     h. delete a file?
+        rm <filename>
     i. delete a folder?
+        rm -R <folder_name>
     j. print the contents of a file?
+        cat <filename>
     k. edit the contents of a file?
+        vim <filename>
 
 2.) Why do we use git and Github?
+    To have a repository where we can:
+    -have a history of al changes of a project
+    -be able to collaborate on a same project without issues
+    -know who and when made changes to the project
+    -work on new features for the project without intervening on the main project files
 
 3.) What is the general flow of git?
+    Initialize a repository -> Add files to the staging area-> Commit those files
+    Then also -> Pull files from a repository -> Modify -> Add/Commit -> Push back to the remote repo
 
 4.) What is the purpose of adding a remote to a local git repository?
+    To be able to share your project & files with other people
 
 5.) How do you print a message to the console?
+    System.out.println("Message"):
 
 6.) Where does a program begin its execution?
+    At the main method
 
 7.) What is a code block and how do you create one?
+    It's a group of coding statements that are grouped together and work to tackle a single task.
 
 8.) What is the idea of variable scope?
+    It's the limits to where a variable is available to the code.
 
 9.) What are semicolons used for?
+    To end an statement.
 
 10.) What are lines of code indented? When should a line be indented?
+    Lines of code are indented to make the code more readable.
+    Should be used henever a new block of code is created.
 
 11.) What does a .java file need to be complied to a .class file before running?
-
+    To be able to be executed by the JVM.
 
 
 
