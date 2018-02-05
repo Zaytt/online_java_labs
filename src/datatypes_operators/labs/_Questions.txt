@@ -2,33 +2,35 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
-
+    They are the most basic data types and are used to store numeric and char values.
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+    int x = 42;
 
 3.) What happens if you initialize a double variable with the value of a int?
-
+    The double will accept the value of the int.
 4.) How do you set an int variable to the value of a double?
-
+    int x = (int) double_value;
 5.) What are the 5 arithmetic operators?
-
+    + - * / %
 6.) What are Relational operators used for? What is the result of using a relational operator?
-
+    They are used to compare the values of variables. The result is a boolean expression, either true or false.
 7.) Demonstrate the use of a Relational operator.
-
+    if(10 > 1) { return "Thats true"; } else { return "this will never execute"; }
 8.) What logical operators used for? What is the result of using a logical operator?
-
+    They are used to compare the values of boolean expressions. The result is another boolean expression.
 9.) Demonstrate the use of a logical operator.
-
+    true || false = true
+    true && false = false
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
-
+    x += 10
 11.) What data type is a String?
-
+    String is a class. It is not a primitive type.
 12.) Are string mutable?
-
+    No
 13.) How do you concatenate Strings?
-
+    with the + operator
 14.) Can you cast and int to a String or a String to an int? Why or why not?
-
+    No, they are not compatible types and you will need to use a method
 15.) What is an array?
 
 16.) What is the first index of an array?
