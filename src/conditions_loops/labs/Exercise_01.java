@@ -24,6 +24,17 @@ public class Exercise_01 {
         int number = scanner.nextInt();
 
         // write completed code here
+        if (number >= 1 && number <= 1000000000)
+        {
+            if(number % 2 == 0){
+                System.out.println("The number " + number + " is even.");
+            } else {
+                System.out.println("The number " + number + " is odd.");
+            }
+        } else {
+            System.out.println("That's not a number between 1 and 1,000,000,000");
+        }
+
 
     }
 }

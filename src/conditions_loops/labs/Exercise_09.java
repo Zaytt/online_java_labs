@@ -8,4 +8,12 @@ package conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main(String[] args){
+        int i = 100;
+        while(i > 0){
+            System.out.println(i);
+            if(i == 50) break; //Will exit at half of the loop iterations instead of the 100 intended.
+            i--;
+        }
+    }
 }
