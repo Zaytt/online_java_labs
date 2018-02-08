@@ -2,44 +2,72 @@ Answer the following questions:
 
 
 1.) What is an instance variable?
-
+    It's a variable is belongs each object of a class. Each object has a copy of that variable for it to use.
 2.) How do you create an object of a class Vehicle?
-
+    Vehicle newVehicle = new Vehicle();
 3.) What is a reference variable? How is it different from a primitive type?
-
+    It's a variable that points to an object IN MEMORY. A primitive just holds a value.
 4.) What does it mean to pass by reference?
-
+    It is pass the "pointer" to an object as a parameter to a method.
 5.) What makes up a method signature?
-
+    It's the name and the number, type and order of its parameters;
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
-
+    double divide(int i, int j);
 7.) When does a method stop executing? How can you make it terminate?
-
+    It terminates when it executes its last statement or when it executes the return statement.
 8.) How do you return a String from a method?
-
+    String method(){
+        return "String";
+    }
 9.) What is the return type of a method that does not returns any value?
-
+    void
 10.) When should a method be static?
-
+    When it should belong to a class rather than to an specific object.
 11.) What is an example of a time you would make an instance variable static? final?
-
+    Static when you need keep the same variable available to all the objects within a class.
+    And final when it should not be modified, it becomes practically a constant.
 12.) When a method returns a value, what needs to be done with that value?
-
+    Stored in another variable or displayed;
 13.) What is method overloading?
-
+    It is to assign different parameters to the same method.
+    So the method can be called with a different set of parameters.
 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
-
+    void Overload()
+    void Overload(int i)
 14.) What are constructors used for?
-
+    To initialize an object of a class.
 15.) If a class does not have a constructor, how does Java handle the creation of an object
-
+    Java will generate a default empty constructor that doesn't initialize any of its instance variables.
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
-
+    public Vehicle(String make, String model){
+        this.make = make;
+        this.model = model;
+    }
 17.) What is the "this" keyword used for?
+    To refer to the object that is calling it.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
+    They define how accessible and by which classes they can be used.
+    This table shows it more clearly:
+
+                | Class | Package | Subclass | Subclass | World
+                |       |         |(same pkg)|(diff pkg)|
+    ————————————+———————+—————————+——————————+——————————+————————
+    public      |   +   |    +    |    +     |     +    |   +
+    ————————————+———————+—————————+——————————+——————————+————————
+    protected   |   +   |    +    |    +     |     +    |
+    ————————————+———————+—————————+——————————+——————————+————————
+    default     |   +   |    +    |    +     |          |
+    ————————————+———————+—————————+——————————+——————————+————————
+    private     |   +   |         |          |          |
 
 19.) What is constructor overloading?
+    Its the same as method overloading but with a constructor.
+    With it you can create an object with a different set of parameters.
 
 20.) Demonstrate constructor overloading with three overloaded constructors.
+
+    public Circle(double radius)
+    public Circle(double radius, String color)
+    public Circle(double radius, String color, double transparency)
 
