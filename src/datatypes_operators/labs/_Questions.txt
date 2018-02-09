@@ -32,16 +32,18 @@ Answer the following questions:
 14.) Can you cast and int to a String or a String to an int? Why or why not?
     No, they are not compatible types and you will need to use a method
 15.) What is an array?
-
+    An array is a data structure that holds a fixed number of items.
 16.) What is the first index of an array?
-
+    0
 17.) Can you change the size of an array once it has been declared and initialized?
-
+    Nope.
 18.) How do you print the 5th element in an array "exampleArray"?
-
+    System.out.println(exampleArray[4]);
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
-
+    int[] intArray = new int[10];
+    int[] intArray = { 1,2,3,4,5,6,7,8,9,10 };
 20.) How do you iterate through a multidimensional array?
-
+    With an outer loop iterating through the array of arrays and then another loop iterating through each of the arrays.
 21.) What is the for-each loop used for?
-
+    It's an enhanced loop form. It is used to iterate through ALL the items in a collection.
+    It has the advantage that it prevents an index out of bounds exception.

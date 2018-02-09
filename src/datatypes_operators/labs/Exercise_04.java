@@ -1,5 +1,7 @@
 package datatypes_operators.labs;
 
+import java.util.Scanner;
+
 /**
  * Data Types and Operators Exercise 4: Arrays calculator
  *
@@ -11,5 +13,24 @@ package datatypes_operators.labs;
  */
 
 public class Exercise_04{
+
+    public static void main(String[] args) {
+        double[] array = new double[10];
+        double sum = 0;
+        double avg = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 10 numbers");
+        for(int i = 1; i < 11; i++){
+            System.out.println("Enter number #" + i);
+            array[i-1] = scanner.nextDouble();
+        }
+
+        for (double i: array) { sum += i; }
+        avg = sum/10;
+
+        System.out.println("The sum of those numbers is " + sum + " and their average is " + avg);
+
+
+    }
 
 }
