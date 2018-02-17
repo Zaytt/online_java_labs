@@ -1,17 +1,23 @@
 Answer the following questions:
 
 1.) What is an interface?
-
+    It's a type of file in Java that specifies a certain behavior & characteristics that the
+    classes that implement the interface will adopt.
 2.) Why are interfaces implemented?
-
+    To assure that a class implements the functions of the interface. This allows the "One interface, multiple methods"
+    of polymorphism in Java, as each class that implements the interface can define how the interface's methods will
+    be executed.
 3.) What is the implement keyword used for?
-
+    To assign an interface to a class
 4.) How many interfaces can class implement?
-
+    Any
 5.) Write a simple interface with one method.
-
+    public interface myInterface{
+        public void method1();
+    }
 6.) Think of a real world application where interfaces are used. Describe it's purpose.
-
+    A unit on a RTS game. Every unit would have basic functions and characteristics that then could be expanded
+    and specialized by a class that implements that interface.
 7.) What is wrong with the following interface?
 
     public interface IncorrectInterface{
@@ -19,3 +25,5 @@ Answer the following questions:
             return x + y;
         }
     }
+
+    Its implementing a method without the default keyword.

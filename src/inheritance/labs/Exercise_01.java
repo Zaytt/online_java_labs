@@ -1,5 +1,7 @@
 package inheritance.labs;
 
+import java.awt.*;
+
 /**
  * Inheritance Exercise 1:
  *
@@ -23,4 +25,5 @@ package inheritance.labs;
  *
  *
  */
+
 

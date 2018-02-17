@@ -1,24 +1,35 @@
 Answer the following questions:
 
 1.) What is exception handling?
-
+    It's a way to handle run time errors without them crashing the application.
+    This allows the programmer to manage the way to continue the program after an error happened.
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
-
+                Exception -> ExceptionSubClass (Fault on the code)
+    Throwable <
+                Error -> Fault in Java Virtual Machine (Not code)
 3.) What is a try/catch?
-
+    It's a block of code that "tries" to execute certain statements while it scans for exceptions and if it "catches"
+    one it will process it accordingly.
 4.) What exceptions have you come across thus far?
+    ArrayIndexOutOfBoundException
 
 5.) How many catch statement can you have following a try?
-
+    Many
 6.) How many try statements can you have preceding a catch?
-
+    One
 7.) What does the finally statement do in a try/catch/finally block?
-
+    It executes a piece of code regardless of the outcome of the try-catch.
 8.) Can you nest exceptions? If so, when would you nest an exception?
-
+     Yes you can. You should do it when there's a possibility of different types of exceptions in a method and also
+     when these types vary in their consequences, some might be minor and the program can continue seamlessly and
+     other might need to terminate a process or even the whole application.
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
-
-10.) How do you rethrow and exception? Why would you rethrow an exception?
-
+    The ArrayOutOfBounds because if it is done the other way around it the Exception will be caught all the time.
+10.) How do you rethrow an exception? Why would you rethrow an exception?
+    You use the "throw" keyword followed by an exception object.
+    This is used when an exception is handled by more than one catch. Perhaps one catch informs the exact error
+    and handles the issue inside an inner method while an outer catch terminates gracefully the application.
 11.) What is the purpose of the throws keyword?
+    To let Java know that the current method throws an exception but it wont handle it; therefore it must be
+    handled by the caller method.
