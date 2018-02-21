@@ -1,5 +1,7 @@
 package input_output.labs;
 
+import java.io.*;
+
 /**
  * Input/Output Exercise 1: File input/output
  *
@@ -9,3 +11,22 @@ package input_output.labs;
  *
  */
 
+public class Exercise_01{
+
+    public static void main(String[] args) {
+
+        int i;
+        try (FileInputStream in = new FileInputStream("testFile.txt");
+             FileOutputStream out = new FileOutputStream("newFile.txt")) {
+
+
+            do {
+                i = in.read();
+                if(i != -1) out.write(i);
+            } while (i != -1);
+        } catch (IOException ioe) {
+            System.out.println("I/O Error: " + ioe);
+        }
+    }
+
+}

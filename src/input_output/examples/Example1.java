@@ -4,7 +4,7 @@ package input_output.examples;
 
 import java.io.IOException;
 
-class ReadBytes {
+class SomReadBytes {
     public static void main(String args[])
             throws IOException {
         byte data[] = new byte[10];

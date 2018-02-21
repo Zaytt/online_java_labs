@@ -1,19 +1,32 @@
 Answer the following questions:
 
 1.) What is a byte stream?
-
+    -It's an interface that allows the user to read and write raw bytes form and into files and other input/output
+    devices. It read one byte at a time.
 2.) What is a character stream?
-
+    -It's similar to a byte stream but it read 2 bytes at at time, converting the 16 bits to a readable character.
 3.) What two classes are at the top of the the byte stream hierarchy?
-
+    -InputStream & OutputStream
 4.) What two classes are at the top of the the character stream hierarchy?
-
+    -Reader & Writer
 5.) List at least three byte stream classes.
+    -BufferedInputStream
+    -BufferedOutputStream
+    -PrintStream
 
 6.) List at least three character stream classes.
+    -BufferedReader
+    -BufferedWriter
+    -FileReader
+    -FileWriter
 
 7.) What is a try-with-resources?
-
+    -It's a variation of try-catch where a stream or "resource" will be defined at the try and it will be closed
+    automatically at the end of the try. This saves time and lines of code compared to closing the stream manually
+    on every instance of the try-catch.
 8.) What makes the BufferedReader different from the BufferedInputStream?
-
+    -Buffered reader is designed to read characters and it's more efficient at it than BufferedInputStream,
+    which is designed to read raw bytes.
 9.) When would you use the read() method vs. the readline() method?
+    -read() reads one character at a time, while readLine() reads a complete sentence.
+    Thus readLine() is better used when a it's more important to read whole words or sentences.

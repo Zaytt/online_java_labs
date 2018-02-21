@@ -13,7 +13,7 @@ public class WeaponController {
         System.out.println("You enter your first building and, lucky you, you find a weapon & some ammo");
         System.out.println("You take it and inspect it:");
         System.out.println(m4.toString());
-        System.out.println("After some more looting you have found some extra attachments for your weapon.");
+        System.out.println("After some more looting you have found some ammo and attachments for your weapon.");
         m4.setGripAttachment('v');
         m4.setMuzzleAttachment('s');
         m4.setSights('4');
@@ -26,7 +26,7 @@ public class WeaponController {
         m4.fire();
         m4.fire();
         System.out.println("You fire a couple of shots but it's not enough... you press the trigger even more");
-        m4.fire(11);
+        m4.fire(5);
         System.out.println("You did it! Killed your first enemy, but keep looking! There will be more looking for you!");
         System.out.println("Good Luck!!");
 

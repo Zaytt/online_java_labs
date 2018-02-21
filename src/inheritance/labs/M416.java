@@ -39,8 +39,18 @@ public class M416 extends AssaultRifle{
     }
 
     public void fire(int bullets){
-        for(int i = 0; this.getBulletCount() > 0 && i < bullets ; i++)
-            fire();
+        for(int i = 0; i < bullets ; i++){
+            if(this.getBulletCount() > 0) {
+                System.out.println("Bang! ");
+                super.fire();
+            }
+            else {
+                System.out.println(" <- Out of Bullets!! ->");
+                this.reload();
+                break;
+            }
+        }
+
     }
 
 
@@ -54,6 +64,7 @@ public class M416 extends AssaultRifle{
     public void reload(){
         System.out.println("Reloading weapon...");
         super.resetMagazine();
+        System.out.println("You now have " + this.getBulletCount() + " bullets in the magazine.");
     }
 
     public Image getSkin() {

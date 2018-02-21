@@ -1,11 +1,25 @@
 Answer the following questions:
 
 1.) What is a thread and why do we use them?
-
+    It's a part of program that can run concurrently with another.
+    They are used to make more time efficient programs that benefit from the idle CPU time that some
+    programs may have.
 2.) What are the two ways to create a thread?
-
+    By implementing the interface "Runnable" or by inheriting the "Thread" class.
 3.) How do you start a thread using the Runnable interface?
+    1. Implement the runnable interface on a class and implementing the run() method.
+    2. Instantiating an object of that class.
+    3. Creating a Thread object that constructs on the previous Runnable class.
+    4. Calling the start() method from the thread object.
+    Steps 2 & 3 can be done at the same time by creating the Thread right at the constructor of the class.
 
+    Then instantiating that class and calling the start() method.
 4.) How do you start a thread using the Thread class?
+    1. Create a class that inherits the Thread Class.
+    2. On the class constructor make a call to the parent class constructor by using super() and also call the start()
+        method;
+    3. Override the run() method.
 
 5.) How do you change a thread priority?
+    By using the method setPriority(int level), where level is the level of priority given to a thread, 1
+    being the lowest and 10 the highest.
