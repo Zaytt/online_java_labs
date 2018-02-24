@@ -14,6 +14,11 @@ class TickTock {
         }
 
         System.out.print("Tick ");
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         state = "ticked"; // set the current state to ticked
 
@@ -35,6 +40,11 @@ class TickTock {
         }
 
         System.out.println("Tock");
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         state = "tocked"; // set the current state to tocked
 
